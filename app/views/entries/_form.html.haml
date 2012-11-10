@@ -13,9 +13,9 @@
     = f.label :author
     = f.number_field :author
   .field
-    = f.label :avatar
+    = f.label 'url'
     %br/
-    = f.file_field :avatar
+    = f.text_field :avatar
   .actions
     = f.submit 'Save'
 

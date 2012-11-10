@@ -6,6 +6,10 @@
 %p
   %b Author:
   = @entry.author
+= image_tag @entry.avatar.url(:medium)
+= image_tag @entry.avatar.url(:square)
+= image_tag @entry.avatar.url(:thumb)
+= image_tag @entry.avatar.url
 
 = link_to 'Edit', edit_entry_path(@entry)
 \|

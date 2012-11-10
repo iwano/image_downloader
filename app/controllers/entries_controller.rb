@@ -40,6 +40,7 @@ class EntriesController < ApplicationController
   # POST /entries
   # POST /entries.json
   def create
+    params[:entry][:avatar] = URI.parse(params[:entry][:avatar])
     @entry = Entry.new(params[:entry])
 
     respond_to do |format|
