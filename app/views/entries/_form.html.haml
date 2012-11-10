@@ -12,5 +12,11 @@
   .field
     = f.label :author
     = f.number_field :author
+  .field
+    = f.label :avatar
+    %br/
+    = f.file_field :avatar
   .actions
     = f.submit 'Save'
+
+    
